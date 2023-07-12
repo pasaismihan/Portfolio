@@ -63,13 +63,13 @@ function About() {
           </p>
           <ul className="about-grid-info-list">
             <li className="about-grid-info-list-item">React</li>
-            <li className="about-grid-info-list-item">React Native</li>
+            <li className="about-grid-info-list-item">Javascript</li>
             <li className="about-grid-info-list-item">Next.js</li>
-            <li className="about-grid-info-list-item">Typescript</li>
+            <li className="about-grid-info-list-item">C#</li>
             <li className="about-grid-info-list-item">Redux Toolkit</li>
             <li className="about-grid-info-list-item">Node.js</li>
-            <li className="about-grid-info-list-item">Elasticsearch</li>
-            <li className="about-grid-info-list-item">Kibana</li>
+            <li className="about-grid-info-list-item">.NET</li>
+            <li className="about-grid-info-list-item">TailwindCSS</li>
             <li className="about-grid-info-list-item">CSS</li>
           </ul>
         </div>
@@ -77,7 +77,7 @@ function About() {
           <div className="overlay"></div>
           <div className="overlay-border"></div>
           <div className="about-grid-photo-container">
-            <Image src="/kishan.jpeg" alt="profile" fill />
+            <Image src="/pasa.jpeg" alt="profile" fill />
           </div>
         </div>
       </div>

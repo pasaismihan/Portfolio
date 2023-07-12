@@ -67,12 +67,7 @@ function Hero() {
           ease: "easeInOut",
           delay: 1.65,
         }}
-      >
-        <Button
-          text="Check out my course"
-          link="https://youtube.com/kishansheth21"
-        />
-      </motion.div>
+      ></motion.div>
     </div>
   );
 }
