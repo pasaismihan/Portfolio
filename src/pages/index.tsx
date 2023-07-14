@@ -24,7 +24,7 @@ function Index() {
     <div className="app">
       <Head>
         <title>Pasa ISMIHAN</title>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/icon.ico" />
       </Head>
       {showContent && (
         <>

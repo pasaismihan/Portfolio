@@ -5,18 +5,6 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <div className="hero">
-      <motion.h1
-        className="hero-title"
-        initial={{ opacity: 0, y: 5 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.3,
-          ease: "easeInOut",
-          delay: 0.6,
-        }}
-      >
-        Hi my name is
-      </motion.h1>
       <motion.h2
         className="hero-title-large"
         initial={{ opacity: 0, y: 5 }}
@@ -27,7 +15,10 @@ function Hero() {
           delay: 0.75,
         }}
       >
-        Kishan Sheth.
+        <div className="typing-slider">
+          <p>Hi I am Pasa ISMIHAN</p>
+          <p>I am Full Stack Developer</p>
+        </div>
       </motion.h2>
       <motion.h3
         className="hero-title-large hero-title-sub"
@@ -54,8 +45,12 @@ function Hero() {
         I&apos;m a software engineer with expertise in creating top-notch
         digital experiences. My current focus is on developing products that are
         accessible and centered around user needs, as part of the team at&nbsp;
-        <Link href="https://rapidops.com" target="_blank" className="link">
-          Rapidops.
+        <Link
+          href="https://https://workintech.com.tr/.com"
+          target="_blank"
+          className="link"
+        >
+          Workintech.
         </Link>
       </motion.p>
       <motion.div
@@ -67,7 +62,12 @@ function Hero() {
           ease: "easeInOut",
           delay: 1.65,
         }}
-      ></motion.div>
+      >
+        <Button
+          text="Check out my resume"
+          link="http://localhost:3000/Pasaismihan_resume.pdf"
+        />
+      </motion.div>
     </div>
   );
 }

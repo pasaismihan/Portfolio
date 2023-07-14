@@ -19,15 +19,12 @@ function Experience() {
       start: "January 2023",
       end: "Present",
       shortDescription: [
-        "I had experience working on a large codebase utilizing Kibana and Elasticsearch.",
-        "Throughout my work, I've utilized various MERN stack technologies, including React, Redux, TypeScript, Node.js, Hapi, and Elasticsearch, among others.",
-        "I've also managed a small team that includes Frontend Developers, Backend Developers, and UI/UX Developers.",
-        "Additionally, I've represented the company in client meetings, communicating effectively on their behalf.",
+        " I finished among the top 10 students at Workintech educational institution, outperforming 1200 candidates, by successfully completing 45 frontend and 22 backend projects. Throughout my software journey, I diligently determined, built, and tested project requirements, adhering to the Agile development model. I effectively resolved issues encountered during project development and actively contributed to group management and collaboration. Looking ahead, my ambition is to leverage my project development skills and the team training I have received to make a meaningful impact in a professional setting. By doing so, I aim to continuously enhance my own abilities while driving growth for the company.",
       ],
     },
 
     {
-      name: "MCA Engineering & Construction",
+      name: "MCA Eng.",
       role: "Civil Static Design Engineer",
       start: "November 2018",
       end: "November 2022",
@@ -77,9 +74,6 @@ function Experience() {
               <span>{expereinces[selected].role}</span>
               <span className="exp-details-position-company">
                 &nbsp;@&nbsp;
-                <Link href={expereinces[selected].url} className="link">
-                  {expereinces[selected].name}
-                </Link>
               </span>
             </h3>
             <p className="exp-details-range">

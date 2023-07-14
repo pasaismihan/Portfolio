@@ -43,13 +43,28 @@
         position: absolute;
         top: 0;
         left: 0;
+        .overlay-border {
+          z-index: -3;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          border: 2px solid var(--theme-color);
+          top: 1.2rem;
+          left: 1.2rem;
+          border-radius: 0.2rem;
+          transition: 0.3s ease-in-out;
+        }
 
         &:hover {
           .project-image-overlay {
-            background-color: #00000000;
+            background-color: rgba(0, 0, 0, 0);
           }
           img {
             filter: none;
+          }
+          .overlay-border {
+            top: 0.15rem;
+            left: 0.15rem;
           }
         }
         &-overlay {
@@ -58,7 +73,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: #9d00ff4d;
+          background-color: #0000006c;
         }
         img {
           z-index: 0;
@@ -92,7 +107,7 @@
           background-color: var(--light-navy);
           border-radius: 0.2rem;
           p {
-            color: var(--light-slate);
+            color: var(--lightest-slate);
             font-family: var(--raleway);
             padding: 2rem;
             text-align: end;
@@ -160,7 +175,7 @@
         .project-info {
           width: 600px;
           height: 300px;
-          background-color: rgba(31, 10, 44, 0.592);
+          background-color: rgba(14, 35, 66, 0.685);
           align-items: flex-start;
           padding: 1rem;
 

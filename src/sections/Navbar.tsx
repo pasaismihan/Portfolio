@@ -1,5 +1,5 @@
 import Button from "@/components/Button";
-import Logo from "@/components/Logo";
+import Logo from "@/components/logo";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
@@ -17,6 +17,10 @@ function Navbar() {
       link: "/#contact",
     },
   ];
+
+  const handleClick = () => {
+    window.location.reload();
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -62,7 +66,7 @@ function Navbar() {
             ease: "easeInOut",
           }}
         >
-          <Link href="kishansheth.com">
+          <Link href="http://localhost:3000/" onClick={handleClick}>
             <Logo />
           </Link>
         </motion.div>
