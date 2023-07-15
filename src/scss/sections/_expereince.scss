@@ -5,6 +5,7 @@
     font-family: var(--raleway);
     color: var(--lightest-slate);
     position: relative;
+
     h2 {
       margin-bottom: 2rem;
       font-size: var(--tx2large);
@@ -31,10 +32,12 @@
     display: grid;
     grid-template-columns: 20% 80%;
     gap: 1rem;
+
     .exp-slider {
       list-style-type: none;
       position: relative;
       height: max-content;
+
       .underline {
         background-color: var(--theme-color);
         position: absolute;
@@ -92,6 +95,49 @@
       &-range {
         color: var(--light-slate);
       }
+      .glass {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        .handle {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 30px;
+          height: 4px;
+          background-color: #000;
+          border-radius: 2px;
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #000;
+            border-radius: 50%;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            border-radius: 50%;
+          }
+        }
+      }
       &-list {
         list-style-type: none;
         display: flex;
@@ -99,10 +145,22 @@
         gap: 1rem;
         margin-top: 1rem;
         padding-left: 20px;
+
         &-item {
           position: relative;
           color: var(--slate);
-          font-weight: 500;
+          font-weight: 600;
+
+          border-radius: 0.2rem;
+          letter-spacing: 0.8px;
+          line-height: 25px;
+          padding: 0 0 0 0.2rem;
+          &:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgba(41, 41, 41, 0.387);
+            font-weight: 700;
+          }
+
           &::before {
             content: "▹";
             position: absolute;

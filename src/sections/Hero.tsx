@@ -15,10 +15,7 @@ function Hero() {
           delay: 0.75,
         }}
       >
-        <div className="typing-slider">
-          <p>Hi I am Pasa ISMIHAN</p>
-          <p>I am Full Stack Developer</p>
-        </div>
+        <p className="textbackground">Hi I'm Pasa ISMIHAN</p>
       </motion.h2>
       <motion.h3
         className="hero-title-large hero-title-sub"
@@ -30,7 +27,7 @@ function Hero() {
           delay: 1.05,
         }}
       >
-        I craft things for the web.
+        I'm working on Full Stack
       </motion.h3>
       <motion.p
         className="hero-text"
@@ -42,18 +39,21 @@ function Hero() {
           delay: 1.35,
         }}
       >
-        I&apos;m a software engineer with expertise in creating top-notch
-        digital experiences. My current focus is on developing products that are
-        accessible and centered around user needs, as part of the team at&nbsp;
-        <Link
-          href="https://https://workintech.com.tr/.com"
-          target="_blank"
-          className="link"
-        >
-          Workintech.
-        </Link>
+        <div className="glass">
+          I&apos;m a software engineer with expertise in creating top-notch
+          digital experiences. My current focus is on developing products that
+          are accessible and centered around user needs, as part of the team
+          at&nbsp;
+          <Link
+            href="https://https://workintech.com.tr/.com/"
+            target="_blank"
+            className="link"
+          >
+            Workintech.
+          </Link>
+        </div>
       </motion.p>
-      <motion.div
+      {/* <motion.div
         className="hero-button"
         initial={{ opacity: 0, y: 5 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ function Hero() {
           text="Check out my resume"
           link="http://localhost:3000/Pasaismihan_resume.pdf"
         />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

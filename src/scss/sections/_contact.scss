@@ -34,8 +34,15 @@
   }
   .contact-cta {
     margin-top: 1rem;
+
     .btn {
       padding: 1rem 2rem;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 18px;
+      border-color: #ffcc00;
+      border-width: 3px;
+      border-radius: 20px;
     }
   }
 }

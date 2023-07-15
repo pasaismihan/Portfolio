@@ -1,7 +1,21 @@
 import Button from "@/components/Button";
 import React from "react";
 import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import Link from "next/link";
 function Contact() {
+  const socialLinks = [
+    {
+      name: "Github",
+      icon: <FiGithub />,
+      link: "https://github.com/pasaismihan",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FiLinkedin />,
+      link: "https://www.linkedin.com/in/pasaismihan/",
+    },
+  ];
   return (
     <motion.div
       className="contact"
@@ -23,10 +37,15 @@ function Contact() {
         try my best to get back to you!
       </p>
       <div className="contact-cta">
-        <Button link="mailto:pasaismihan0@gmail.com" text="Say Hello" />
+        <Button
+          link="mailto:pasaismihan0@gmail.com"
+          text="pasaismihan0@gmail.com"
+        />
       </div>
     </motion.div>
   );
 }
 
 export default Contact;
+
+<footer></footer>;

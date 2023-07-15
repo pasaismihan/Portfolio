@@ -1,12 +1,17 @@
 :root {
   --navy-shadow: #213363cc;
   --background-color: #234a37;
+  --background-image: url("/././public/background2.jpg");
+  --background-repeat: no-repeat;
+  --background-position: center center;
+  --background-attachment: fixed;
+  --background-size: cover;
   --lightest-navy: #203b6a;
   --light-navy: rgba(14, 35, 66, 0.546);
   --dark-slate: #495670;
-  --slate: #faf5e9;
+  --slate: #f2efef;
   --light-slate: #ffcc00;
-  --lightest-slate: #faf5e9;
+  --lightest-slate: #f2efef;
   --theme-color: #ffcc00;
 }
 
@@ -28,6 +33,12 @@ body {
 body {
   background-color: var(--background-color);
   counter-reset: title;
+
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-position);
+  background-attachment: var(--background-attachment);
+  background-size: var(--background-size);
+  background-image: url("/background5.jpg");
 }
 
 main {
@@ -49,15 +60,30 @@ main {
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--dark-slate) var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-position);
+  background-attachment: var(--background-attachment);
+  background-size: var(--background-size);
 }
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
   background: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-position);
+  background-attachment: var(--background-attachment);
+  background-size: var(--background-size);
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--dark-slate);
   border: 3px solid var(--background-color);
   border-radius: 10px;
+  background-image: var(--background-image);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-position);
+  background-attachment: var(--background-attachment);
+  background-size: var(--background-size);
 }

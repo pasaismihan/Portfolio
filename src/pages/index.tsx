@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Email from "@/components/Email";
-import Loader from "@/components/Loader";
-import SocialIcons from "@/components/SocialIcons";
-import Footer from "@/sections/Footer";
+
 import Hero from "@/sections/Hero";
 import Navbar from "@/sections/Navbar";
 import React, { useState } from "react";
@@ -26,22 +23,18 @@ function Index() {
         <title>Pasa ISMIHAN</title>
         <link rel="shortcut icon" href="/icon.ico" />
       </Head>
-      {showContent && (
-        <>
-          <Navbar />
-          <SocialIcons />
-          <Email />
-          <main>
-            <Hero />
-            <About />
-            <Experience />
-            <Projects />
-            <Contact />
-          </main>
-          <Footer />
-        </>
-      )}
-      <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />
+
+      <>
+        <Navbar />
+
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
+      </>
     </div>
   );
 }

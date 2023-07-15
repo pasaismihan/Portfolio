@@ -82,9 +82,11 @@ function Experience() {
             <ul className="exp-details-list">
               {expereinces[selected].shortDescription.map(
                 (description, index) => (
-                  <li key={index} className="exp-details-list-item">
-                    {description}
-                  </li>
+                  <div className="glass">
+                    <li key={index} className="exp-details-list-item">
+                      {description}
+                    </li>
+                  </div>
                 )
               )}
             </ul>

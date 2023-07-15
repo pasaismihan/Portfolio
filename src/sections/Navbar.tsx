@@ -1,10 +1,12 @@
 import Button from "@/components/Button";
-import Logo from "@/components/logo";
+import Logo from "@/components/Logo";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+
 function Navbar() {
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
@@ -15,6 +17,18 @@ function Navbar() {
     {
       name: "Contact",
       link: "/#contact",
+    },
+  ];
+  const socialLinks = [
+    {
+      name: "Github",
+      icon: <FiGithub />,
+      link: "https://github.com/pasaismihan",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FiLinkedin />,
+      link: "https://www.linkedin.com/in/pasaismihan/",
     },
   ];
 
@@ -58,7 +72,6 @@ function Navbar() {
     <nav>
       <div className={`wrapper ${navbarVisible ? "blur-nav" : ""}`}>
         <motion.div
-          className="brand"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -66,9 +79,19 @@ function Navbar() {
             ease: "easeInOut",
           }}
         >
-          <Link href="http://localhost:3000/" onClick={handleClick}>
-            <Logo />
-          </Link>
+          <ul className="social-icons-list">
+            {socialLinks.map(({ name, icon, link }) => (
+              <li key={name} title={name} className="social-icons-list-item">
+                <Link
+                  href={link}
+                  className="social-icons-list-item-link"
+                  target="_blank"
+                >
+                  {icon}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </motion.div>
         <motion.div
           className="nav-responsive-toggle"
