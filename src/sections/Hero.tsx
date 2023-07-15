@@ -40,7 +40,7 @@ function Hero() {
         }}
       >
         <div className="glass">
-          I&apos;m a software engineer with expertise in creating top-notch
+          I&apos;m a Software developer with expertise in creating top-notch
           digital experiences. My current focus is on developing products that
           are accessible and centered around user needs, as part of the team
           at&nbsp;
