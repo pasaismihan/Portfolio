@@ -2,6 +2,7 @@
   "name": "nextjs-portfolio",
   "version": "0.1.0",
   "private": false,
+  "homepage": "http://pasaismihan.github.io/pasaismihan.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -27,6 +28,5 @@
   "devDependencies": {
     "gh-pages": "^6.0.0",
     "sass": "^1.59.2"
-  },
-  "homepage": "http://pasaismihan.github.io/pasaismihan.github.io"
+  }
 }
