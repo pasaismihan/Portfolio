@@ -152,7 +152,7 @@ function Navbar() {
           >
             <Button
               text="Resume"
-              link="http://localhost:3000/Pasaismihan_resume.pdf"
+              link="http://localhost:3000/Pasaismihan_CV.pdf"
             />
           </motion.div>
         </div>
