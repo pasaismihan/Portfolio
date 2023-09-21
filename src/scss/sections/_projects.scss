@@ -22,7 +22,7 @@
         top: 20px;
         width: 300px;
         height: 2px;
-        margin-left: 420px;
+        margin-left: 300px;
         background-color: var(--lightest-navy);
       }
     }
@@ -30,15 +30,14 @@
   &-container {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 6rem;
     .project {
-      position: relative;
       display: flex;
       justify-content: flex-end;
       &-image {
         &-container {
           position: relative;
-          width: 600px;
+          width: 500px;
           height: 300px;
         }
         position: absolute;
@@ -110,7 +109,7 @@
           p {
             color: var(--lightest-slate);
             font-family: var(--raleway);
-            padding: 2rem;
+            padding: 1rem;
             text-align: end;
           }
         }
