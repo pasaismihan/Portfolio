@@ -28,56 +28,40 @@ function About() {
       <div className="about-grid">
         <div className="about-grid-info">
           <p className="about-grid-info-text">
-            Bonjour! My name is Pasa, and I am passionate about creating digital
-            content for the web. My interest in web development was sparked in
-            2016 when I created my first project called Lavish, a social media
-            app built using React and Node.js.
-          </p>
-          <p className="about-grid-info-text">
-            Fast-forward to today, I specialize in designing and developing
-            high-quality solutions that delight our clients and exceed their
-            expectations at{" "}
-            <Link href="https://rapidops.com" className="link" target="_blank">
-              Rapidops.
-            </Link>
+            Hello, my name is Paşa. If I need to briefly talk about myself;
+            During my university years, I enjoyed discussing the difficulties
+            faced by a roommate who was a computer engineer in algorithm lessons
+            together. After graduation, I started professional life as a civil
+            engineer, but the pleasure I got from software was always in the
+            back of my mind. While progressing in this field on my own, I
+            successfully completed the 6-month Full Stack bootcamp training
+            under the guidance of my mentor teachers in order to progress the
+            process in the most efficient way. For the last 5 months, I have
+            been developing Full Stack projects on .Net and React.Js. The
+            project I am currently working on uses microservice architecture,
+            and I feel that I am improving myself even more in every project.
           </p>
 
-          <p className="about-grid-info-text">
-            Additionally, I share my knowledge and passion with the world
-            through my YouTube channel, where I demonstrate how to build
-            full-stack applications.
-          </p>
-          <p className="about-grid-info-text">
-            I am also working on a new project called&nbsp;
-            <Link
-              className="link"
-              target="_blank"
-              href="https://frontendvita.com"
-            >
-              FrontendVita,
-            </Link>
-            &nbsp;aimed at enhancing frontend development skills.
-          </p>
           <p className="about-grid-info-text">
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="about-grid-info-list">
-            <li className="about-grid-info-list-item">React</li>
+            <li className="about-grid-info-list-item">React.js</li>
             <li className="about-grid-info-list-item">Javascript</li>
             <li className="about-grid-info-list-item">Next.js</li>
             <li className="about-grid-info-list-item">C#</li>
-            <li className="about-grid-info-list-item">Redux Toolkit</li>
+            <li className="about-grid-info-list-item">EF Core</li>
             <li className="about-grid-info-list-item">Node.js</li>
             <li className="about-grid-info-list-item">.NET</li>
-            <li className="about-grid-info-list-item">TailwindCSS</li>
-            <li className="about-grid-info-list-item">CSS</li>
+            <li className="about-grid-info-list-item">RabbitMQ</li>
+            <li className="about-grid-info-list-item">MVC</li>
           </ul>
         </div>
         <div className="about-grid-photo">
           <div className="overlay"></div>
           <div className="overlay-border"></div>
           <div className="about-grid-photo-container">
-            <Image src="/pasa.jpeg" alt="profile" fill />
+            <Image src="/pasa2.jpeg" alt="profile" fill />
           </div>
         </div>
       </div>
