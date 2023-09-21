@@ -152,7 +152,7 @@ function Navbar() {
           >
             <Button
               text="Resume"
-              link="http://localhost:3000/Pasaismihan_CV.pdf"
+              link="https://pasaismihan.vercel.app/Pasaismihan_CV.pdf"
             />
           </motion.div>
         </div>
