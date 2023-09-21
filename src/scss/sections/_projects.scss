@@ -37,7 +37,7 @@
       &-image {
         &-container {
           position: relative;
-          width: 500px;
+          width: 400px;
           height: 300px;
         }
         position: absolute;
@@ -83,7 +83,7 @@
       }
       &-info {
         z-index: 5;
-        width: 450px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
