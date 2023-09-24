@@ -9,7 +9,6 @@ function Projects() {
     {
       image: "/carauction.png",
       projectName: "Car Auction Microservice App",
-
       projectDescription:
         "this full stack website is an application that is made using microservice architecture, with SignalR, it is an application with features such as filtering and sorting, selling cars with auction via chat instantly, and identity system.",
       projectTech: [
