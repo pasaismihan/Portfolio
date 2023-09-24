@@ -7,59 +7,73 @@ import { motion } from "framer-motion";
 function Projects() {
   const projectsData = [
     {
-      image: "/project1.png",
-      projectName: "Pokedex",
-      projectLink: "https://netlify.com",
+      image: "/carauction.png",
+      projectName: "Car Auction Microservice App",
+
       projectDescription:
-        "This is a web application that uses the PokeAPI to display information about different Pokemon, including their evolution levels and details. You can compare multiple Pokemon using a queue, and add them to your personal list using Firebase's Firestore database.",
+        "this full stack website is an application that is made using microservice architecture, with SignalR, it is an application with features such as filtering and sorting, selling cars with auction via chat instantly, and identity system.",
       projectTech: [
-        "React",
-        "Redux Toolkit",
-        "SCSS",
-        "Firebase",
-        "Typescript",
-        "PokeApi",
+        "Next.js",
+        ".NET",
+        "Microservice Architecture",
+        "RabbitMQ",
+        "SignalR",
+        "Duende",
+        "PostgreSQL",
+        "Mongo DB",
+        "Docker",
       ],
       projectExternalLinks: {
-        github: "",
+        github: "https://github.com/pasaismihan/CarStoreApp_Microservices",
         externalLink: "",
       },
     },
     {
-      image: "/project2.png",
-      projectName: "Realtime Chat App",
-      projectLink: "https://netlify.com",
+      image: "/resumemanagement.png",
+      projectName: "Resume Management Website",
       projectDescription:
-        "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
+        "The aim of this website is to create a resume from scratch and download and use it as a pdf. The frontend of this full stack project with its convenient frontend and day/night option was made with typscript and react.js, and the backend was made with ASP.NET core.",
       projectTech: [
-        "React",
-        "Sockets",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Styled Components",
+        "React.js",
+        "TypeScript",
+        "ASP.NET Core",
+        "Entity Framework",
+        "MS SQL Server",
+        "Material UI",
       ],
       projectExternalLinks: {
-        github: "",
+        github: "https://github.com/pasaismihan/ResumeManagement",
         externalLink: "",
       },
     },
     {
-      image: "/project3.png",
-      projectName: "Netflix App",
-      projectLink: "https://netlify.com",
+      image: "/crm.png",
+      projectName: "CRM Bank Credit Interface Management",
+
       projectDescription:
-        "I made a Netflix copy with TMBD Api. It has infinite scrolling and lets you watch movies by genre. You can also add movies to your favorites list.",
+        "In this project, it is aimed to transmit the incoming data to the Pipedrive API by managing the incoming data in the interface through the API received according to the form information that customers fill out from the Typeform application.",
       projectTech: [
-        "React",
-        "Node.js",
-        "Firebase",
-        "MongoDB",
-        "Express",
-        "Redux Toolkit",
+        "React.js",
+        "C#",
+        ".NET Core",
+        "EF Core",
+        "MS SQL Server",
+        "MUI Dashboard",
       ],
       projectExternalLinks: {
-        github: "",
+        github: "https://github.com/Workintech-Graduate-Projects",
+        externalLink: "",
+      },
+    },
+    {
+      image: "/pizza.png",
+      projectName: "Pizza Order Website",
+
+      projectDescription:
+        "There are stages such as dough specifications, pizza content, pricing on the pizza ordering site. For these selections, the CIP validation was used. Cypress library was used in the testing phase.",
+      projectTech: ["React.js", "Tailwind CSS", "HTML", "Cypress", "Bootstrap"],
+      projectExternalLinks: {
+        github: "https://github.com/pasaismihan/fsweb-s7-challenge-pizza",
         externalLink: "",
       },
     },
@@ -84,7 +98,6 @@ function Projects() {
           ({
             image,
             projectDescription,
-            projectLink,
             projectExternalLinks,
             projectName,
             projectTech,

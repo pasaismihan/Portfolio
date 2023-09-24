@@ -42,6 +42,21 @@ function Contact() {
           text="pasaismihan0@gmail.com"
         />
       </div>
+      <div>
+        <ul className="social-icons-list">
+          {socialLinks.map(({ name, icon, link }) => (
+            <li key={name} title={name} className="social-icons-list-item">
+              <Link
+                href={link}
+                className="social-icons-list-item-link"
+                target="_blank"
+              >
+                {icon}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </motion.div>
   );
 }
